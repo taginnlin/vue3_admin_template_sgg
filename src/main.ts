@@ -18,8 +18,11 @@ app.use(ElementPlus, {
 
 // 注册全局组件
 app.use(globalComponent)
+// 注册路由
+app.use(router)
 
 // svg 图标
 import 'virtual:svg-icons-register'
+import router from './router'
 
 app.mount('#app')
