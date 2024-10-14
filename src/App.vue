@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <h1>我是App组件</h1>
   </div>
 </template>
