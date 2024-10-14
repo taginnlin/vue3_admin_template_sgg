@@ -6,6 +6,8 @@ import 'element-plus/dist/index.css'
 import zhCn from 'element-plus/es/locale/lang/zh-cn'
 // 注册全局组件
 import globalComponent from '@/components'
+// 全局样式
+import '@/styles/index.scss'
 
 const app = createApp(App)
 
