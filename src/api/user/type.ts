@@ -6,7 +6,8 @@ export interface LoginDataType {
 }
 
 interface dataType {
-  token: string
+  token?: string
+  message?: string
 }
 
 // 登录返回值类型
