@@ -2,7 +2,7 @@
 export const constantRoute = [
   {
     path: '/',
-    component: () => import('@/views/home/index.vue'),
+    component: () => import('@/Layout/index.vue'),
     // 命名空间
     name: 'layout',
   },
