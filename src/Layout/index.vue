@@ -1,7 +1,10 @@
 <template>
   <div class="layout_container">
     <!-- 左侧菜单栏 -->
-    <div class="layout_slider"></div>
+    <div class="layout_slider">
+      <!-- logo组件 -->
+      <Logo></Logo>
+    </div>
     <!-- 顶部导航栏 -->
     <div class="layout_tabbar"></div>
     <!-- 右侧路由区域 -->
@@ -9,7 +12,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Logo from './logo/index.vue'
+</script>
 
 <style scoped lang="scss">
 .layout_container {
@@ -33,13 +38,14 @@
   }
 
   .layout_main {
+    overflow: auto;
     position: absolute;
     top: $base-tabbar-height;
     left: $base-menu-width;
-    overflow: auto;
     width: calc(100% - $base-menu-width);
     height: calc(100% - $base-tabbar-height);
     background-color: green;
+    padding: 20px;
   }
 }
 </style>
